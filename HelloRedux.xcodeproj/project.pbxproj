@@ -17,6 +17,7 @@
 		B4FE0B6F2C56827F000F09E3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE0B6E2C56827F000F09E3 /* Task.swift */; };
 		B4FE0B712C56832B000F09E3 /* TaskReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE0B702C56832B000F09E3 /* TaskReducer.swift */; };
 		B4FE0B732C56862D000F09E3 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE0B722C56862D000F09E3 /* AddTaskView.swift */; };
+		B4FE0B762C568F15000F09E3 /* LogMiddlewares.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE0B752C568F15000F09E3 /* LogMiddlewares.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B4FE0B6E2C56827F000F09E3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		B4FE0B702C56832B000F09E3 /* TaskReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReducer.swift; sourceTree = "<group>"; };
 		B4FE0B722C56862D000F09E3 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		B4FE0B752C568F15000F09E3 /* LogMiddlewares.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddlewares.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		B4D544C82C566EDC0099E4E2 /* HelloRedux */ = {
 			isa = PBXGroup;
 			children = (
+				B4FE0B6D2C56824D000F09E3 /* Models */,
 				B4D544D72C566EFD0099E4E2 /* Store */,
 				B4D544C92C566EDC0099E4E2 /* HelloReduxApp.swift */,
 				B4D544CB2C566EDC0099E4E2 /* ContentView.swift */,
@@ -84,7 +87,7 @@
 		B4D544D72C566EFD0099E4E2 /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				B4FE0B6D2C56824D000F09E3 /* Models */,
+				B4FE0B742C568EE6000F09E3 /* Middlewares */,
 				B4D544DA2C567D350099E4E2 /* Reducers */,
 				B4D544D82C566F0B0099E4E2 /* Store.swift */,
 			);
@@ -107,6 +110,14 @@
 				B4FE0B6E2C56827F000F09E3 /* Task.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B4FE0B742C568EE6000F09E3 /* Middlewares */ = {
+			isa = PBXGroup;
+			children = (
+				B4FE0B752C568F15000F09E3 /* LogMiddlewares.swift */,
+			);
+			path = Middlewares;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				B4D544CA2C566EDC0099E4E2 /* HelloReduxApp.swift in Sources */,
 				B4FE0B712C56832B000F09E3 /* TaskReducer.swift in Sources */,
 				B4FE0B6F2C56827F000F09E3 /* Task.swift in Sources */,
+				B4FE0B762C568F15000F09E3 /* LogMiddlewares.swift in Sources */,
 				B4D544DE2C567DC00099E4E2 /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

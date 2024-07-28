@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct HelloReduxApp: App {
     
-    let store = Store(reducer: appReducer, state: AppState())
+    let store = Store(reducer: appReducer, state: AppState(), middlewares: [logMiddleware()])
     
     var body: some Scene {
         WindowGroup {
