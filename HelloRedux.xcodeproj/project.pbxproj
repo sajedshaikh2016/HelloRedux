@@ -12,6 +12,8 @@
 		B4D544CE2C566EDD0099E4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D544CD2C566EDD0099E4E2 /* Assets.xcassets */; };
 		B4D544D12C566EDD0099E4E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D544D02C566EDD0099E4E2 /* Preview Assets.xcassets */; };
 		B4D544D92C566F0B0099E4E2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D544D82C566F0B0099E4E2 /* Store.swift */; };
+		B4D544DC2C567D670099E4E2 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D544DB2C567D670099E4E2 /* CounterReducer.swift */; };
+		B4D544DE2C567DC00099E4E2 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D544DD2C567DC00099E4E2 /* AppReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		B4D544CD2C566EDD0099E4E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4D544D02C566EDD0099E4E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4D544D82C566F0B0099E4E2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		B4D544DB2C567D670099E4E2 /* CounterReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		B4D544DD2C567DC00099E4E2 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +77,19 @@
 		B4D544D72C566EFD0099E4E2 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				B4D544DA2C567D350099E4E2 /* Reducers */,
 				B4D544D82C566F0B0099E4E2 /* Store.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		B4D544DA2C567D350099E4E2 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				B4D544DB2C567D670099E4E2 /* CounterReducer.swift */,
+				B4D544DD2C567DC00099E4E2 /* AppReducer.swift */,
+			);
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D544D92C566F0B0099E4E2 /* Store.swift in Sources */,
+				B4D544DC2C567D670099E4E2 /* CounterReducer.swift in Sources */,
 				B4D544CC2C566EDC0099E4E2 /* ContentView.swift in Sources */,
 				B4D544CA2C566EDC0099E4E2 /* HelloReduxApp.swift in Sources */,
+				B4D544DE2C567DC00099E4E2 /* AppReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
